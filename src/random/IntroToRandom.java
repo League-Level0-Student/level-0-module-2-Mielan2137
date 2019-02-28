@@ -9,27 +9,10 @@ import javax.swing.JOptionPane;
 
 public class IntroToRandom {
 	public static void main(String[] args) {
-		String Simba = JOptionPane.showInputDialog("Woud you like a random number?");
-		if (Simba.equals("Yes")) {
-			System.out.print("Good");
-			Random Steve = new Random();
-			int num = Steve.nextInt(11);
-			System.out.print(num);
-			JOptionPane.showMessageDialog(null, "Your number is " + num);
-		}
-		String Parce = JOptionPane.showInputDialog("Select a number between 1 & 10");
-		String Cuco = JOptionPane.showInputDialog("Are you ready to play for luck?");
-		if (Cuco.equals("Yes")) {
-			Random Steve = new Random();
-			int num = Steve.nextInt(11);
-			System.out.print(num);
-			JOptionPane.showMessageDialog(null, "The number is " + num);
-
-			String Capo = JOptionPane.showInputDialog("Was your number right? " + num);
-			if (Capo.equals("Yes")) {
-				JOptionPane.showMessageDialog(null, "Great");
-			}
-		}
+		Random snake = new Random();
+		int num = snake.nextInt(310)-222;
+		JOptionPane.showMessageDialog(null, "You number is " + num);
+		System.out.print(num);
 	}
 }
 
@@ -47,3 +30,4 @@ public class IntroToRandom {
 
 //2. Run the program.  What number appears in the console?
 //   Run it again. Is the number the same?
+
