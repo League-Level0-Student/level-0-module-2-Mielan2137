@@ -13,15 +13,29 @@ import javax.swing.JOptionPane;
 public class AnimalFarm {
 
 	AnimalFarm() {
-		/*
-		 * 1. Ask the user which animal they want, then play the sound of that animal.
-		 */
-		
-		/* 2. Make it so that the user can keep entering new animals. */
+		String Pop=JOptionPane.showInputDialog("Which animal would you lke to hear");
+		if(Pop.equals("Cow")){
+			playMoo();
+		}
+		if(Pop.equals("Duck")){
+			playQuack();
+		}
+		if(Pop.equals("Dog")){
+		playWoof();
+		}
+		if (Pop.equals("Cat")){
+		playNoise(meowFile);
+		}
+		if (Pop.equals("Llama")){
+			playNoise(llamaFile);
+		}
 	}
+	
+		/* 2. Make it so that the user can keep entering new animals. */
+	
 
 	void playMoo() {
-		playNoise(mooFile);
+		playNoise(mooFile); 
 	}
 
 	void playQuack() {
